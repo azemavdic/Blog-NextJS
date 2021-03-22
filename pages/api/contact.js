@@ -26,14 +26,13 @@ export default async function habdler(req, res) {
         //Konekcija na bazu podataka
         let client;
 
+        const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.ioexp.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
+
         try {
-            client = await MongoClient.connect(
-                'mongodb+srv://asko2212:asko2212@cluster0.ioexp.mongodb.net/mySite?retryWrites=true&w=majority',
-                {
-                    useNewUrlParser: true,
-                    useUnifiedTopology: true,
-                }
-            );
+            client = await MongoClient.connect(connectionString, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            });
         } catch (error) {
             res.status(500).json({ message: 'Neuspješna konekcija na bazu!' });
             return;

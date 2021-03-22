@@ -82,7 +82,7 @@ const ContactForm = () => {
     }
 
     return (
-        <section className='my-8 mx-auto rounded-md bg-gray-100 w-11/12 max-w-3xl p-4 shadow text-2xl'>
+        <section className='my-4 mx-auto rounded-md bg-gray-100 w-11/12 max-w-3xl p-4 shadow-md text-2xl'>
             <h1 className='text-3xl font-bold my-4 mx-0 text-center'>
                 Kako Vam možemo pomoći?
             </h1>
@@ -91,7 +91,7 @@ const ContactForm = () => {
                     <div className='flex-1 min-w-min'>
                         <label
                             htmlFor='email'
-                            className='block font-medium mt-2 mx-0 mb-1'
+                            className='block font-medium mt-2 mx-0 mb-1 text-xl'
                         >
                             Email
                         </label>
@@ -107,7 +107,7 @@ const ContactForm = () => {
                     <div className='flex-1 min-w-min'>
                         <label
                             htmlFor='name'
-                            className='block font-medium mt-2 mx-0 mb-1'
+                            className='block font-medium mt-2 mx-0 mb-1 text-xl'
                         >
                             Ime
                         </label>
@@ -124,7 +124,7 @@ const ContactForm = () => {
                 <div className='flex-1 min-w-min'>
                     <label
                         htmlFor='message'
-                        className='block font-medium mt-2 mx-0 mb-1'
+                        className='block font-medium mt-2 mx-0 mb-1 text-xl'
                     >
                         Poruka
                     </label>
@@ -138,7 +138,7 @@ const ContactForm = () => {
                     ></textarea>
                 </div>
                 <div className='mt-4 text-right'>
-                    <button className='bg-gray-800 border border-gray-800 rounded text-gray-50 py-2 px-4 shadow hover:bg-gray-500 hover:border-gray-500'>
+                    <button className='bg-gray-800 border border-gray-800 rounded text-gray-50 py-2 px-4 shadow hover:bg-gray-500 hover:border-gray-500 text-base'>
                         Pošalji poruku
                     </button>
                 </div>
